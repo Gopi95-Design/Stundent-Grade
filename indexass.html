@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>var sname="Ruthuran";
+        var sid=512620;
+        var m1;
+        var m2;
+        var m3;
+        var m4;
+        var m5;
+        var total=m1+m2+m3+m4+m5;
+        var percentage=(total*100)/500.0;
+        
+        function calculate ()
+        {
+            m1=parseInt(form1.txtnum1.value);
+            m2=parseInt(form1.txtnum2.value);
+            m3=parseInt(form1.txtnum3.value);
+            m4=parseInt(form1.txtnum4.value);
+            m5=parseInt(form1.txtnum5.value);
+            total=m1+m2+m3+m4+m5;
+        
+            percentage = total/5;
+            document.write("Total:"+"<b>"+total+"<b>"+"<br>");
+                document.write("Percentage:"+"<b>"+percentage+"<b>"+"<br>");
+                    document.write("Grade:")
+        if(percentage>=91)
+        {
+            document.write("A")
+        }
+        else if(percentage>=81)
+            {
+                document.write("B")
+            }
+            else  if(percentage>=71)
+                {
+                    document.write("C")
+                }
+                else  if(percentage>=61)
+                    {
+                        document.write("D")
+                    }
+                    else  if(percentage>=51)
+                        {
+                            document.write("E")
+                        }
+                        else  if(percentage<=50)
+                            {
+                                document.write("Fail")
+                            }
+                        }
+                            </script>
+</head>
+<body>
+    <h1>Student Grade </h1>
+    <form name="form1">
+        <b>Enter Marks 1:</b>
+        <input type="textbox" name="txtnum1"><br>
+        <b>Enter Marks 2:</b>
+        <input type="textbox" name="txtnum2"><br>
+        <b>Enter Marks 3:</b>
+        <input type="textbox" name="txtnum3"><br>
+        <b>Enter Marks 4:</b>
+        <input type="textbox" name="txtnum4"><br>
+        <b>Enter Marks 5:</b>
+        <input type="textbox" name="txtnum5"><br>
+        <input type="button" value="calculate" onclick="calculate()">
+    </form>
+</body>
+</htm
